@@ -10,4 +10,4 @@ websocketを実装するサンプル
 
 # 起動方法
 
-* websocketの実があるtomcat8あたりにデプロイする
+* websocketの実装があるtomcat8あたりにデプロイする
