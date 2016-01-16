@@ -10,4 +10,4 @@ websocketを実装するサンプル
 
 # 起動方法
 
-* mvn tomcat7:run
+* websocketの実があるtomcat8あたりにデプロイする
