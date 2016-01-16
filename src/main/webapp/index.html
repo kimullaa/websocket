@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+	<h1>POLLING</h1>
+	<dl>
+		<dt>CountUp:</dt>
+		<dd></dd>
+	</dl>
+
+	<script type="text/javascript">
+		$(function() {
+			var ws = new WebSocket("ws://localhost:8080/websocket/countUp");
+
+			ws.onmessage = function(e) {
+				$('dd').text(JSON.parse(e.data).count);
+			};
+		});
+	</script>
+</body>
+</html>
