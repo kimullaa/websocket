@@ -18,7 +18,7 @@ public class CountUpServer {
 	private static final Queue<Session> sessions = new ConcurrentLinkedQueue<>();
 
 	static {
-		// 1sごとにインクリメントする
+		// 5sごとにインクリメントする
 		Timer timer = new Timer();
 		TimerTask task = new TimerTask() {
 			@Override
